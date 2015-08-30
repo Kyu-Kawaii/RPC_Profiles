@@ -1,0 +1,610 @@
+<style>
+/* DOCUMENT INFORMATION:
+ * Profile Created By: Kyu-Kawaii on Deviant Art
+ * Website URL: http://kyu-kawaii.deviantart.com
+ * Please do not remove credit links! Thank you!
+ * 
+ * TABLE OF CONTENTS:
+ * 
+ * Use CTRL + F / CMMD + F to find 
+ * the following, and you will jump to
+ * that section in this document.
+ *
+ * 1. =IMPORT DEPENDENCIES
+ * 2. =RPC RESET
+ * 3. =CUSTOM STYLES
+ * 4. =SCROLL BAR
+ * 5. =TYPOGRAPHY
+ * 6. =GRAPHIC ELEMENTS
+ * 7. =NAVIGATION
+ * 8. =IMAGE SLIDER
+ * 9. =CUSTOM YOUTUBE EMBED
+ *10. =GALLERY (FRIENDS)
+ *11. =MUSIC SECTION
+ */
+
+
+/* ===IMPORT DEPENDENCIES=== */
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Vollkorn:400,400italic,700,700italic);
+
+/* ===RPC RESET=== */
+body {
+	margin: 0;
+	overflow: hidden;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.pfor {
+	display: none;
+}
+
+#profile {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+	overflow: hidden;
+	background: none;
+}
+
+/* ===CUSTOM STYLES=== */
+#wrapper {
+	width: 100%;
+	height: 100%;
+	background: 
+		url(http://s29.postimg.org/evcu48xvr/background.jpg) no-repeat bottom left, 
+		rgb(238, 236, 238);
+}
+
+.content {
+	width: 500px;
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	right: 230px;
+	top: 100px;
+	background-color: #FFF;
+	z-index: 2;
+
+	-webkit-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.13), 0px 0px 10px -1px rgba(0,0,0,0.03);
+	-moz-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.13), 0px 0px 10px -1px rgba(0,0,0,0.03);
+	box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.13), 0px 0px 10px -1px rgba(0,0,0,0.03);
+}
+
+.content_box {
+	margin: 0 auto;
+	margin-bottom: 1000px;
+	overflow: hidden;
+}
+
+.content_section {
+	overflow-y: scroll;
+	height: 550px;
+	padding: 25px;
+}
+
+.content_section p:first-of-type {
+	margin-top: 20px;
+}
+
+#stats p, #ooc p {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+/* ===SCROLL BAR=== */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 1px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ===TYPOGRAPHY=== */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Amatic SC', cursive;
+	text-transform: uppercase;
+}
+
+h1 {
+	text-align: center;
+	letter-spacing: 5px;
+	margin: 0px;
+	margin-bottom: 10px;
+	color: rgb(0,0,0);
+}
+
+p {
+	font-family: 'Vollkorn', serif;
+	font-size: 13px;
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	color: rgba(0,0,0,0.5);
+}
+
+b {
+	font-weight: 600;
+	color: rgb(127, 0, 0);
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+.label {
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	font-size: 9px;
+	margin: 20px 0px 0px;
+	color: rgba(0,0,0,1);
+}
+
+/* Basic Links */
+a {
+	color: rgb(127, 0, 0);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: line-through;
+}
+
+/* ===GRAPHIC ELEMENTS=== */
+.separator {
+	width: 130px;
+	height: 30px;
+	margin: 0 auto;
+	background: url(http://s13.postimg.org/wmcvrfp1z/img_border.png) no-repeat;
+	background-size: 130px auto;
+}
+
+/* ===NAVIGATION=== */
+.nav {
+	position: absolute;
+	right: 30px;
+	top: 165px;
+	z-index: 1;
+	border: 1px solid rgba(0,0,0,0.12);
+	background: url(http://s29.postimg.org/fgmsdknif/light_wool.png) repeat;
+}
+
+.nav .nav_link {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 18px !important;
+	text-decoration: none;
+	height: 25px;
+	margin: 5px 15px;
+	float: right;
+	clear: both;
+}
+
+.nav .nav_link a {
+	color: rgb(127, 0, 0);
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nav a:hover {
+	text-decoration: line-through;
+}
+
+.nav a:hover::before, .nav a:hover::after {
+	content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.nav a:hover::before {
+	border-bottom: 1px solid rgb(127, 0, 0);
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+
+.nav a:hover::after {
+	border-bottom: 1px solid rgb(127, 0, 0);
+    -webkit-transform: skewY(2deg);
+    transform: skewY(2deg);
+}
+
+/* ===IMAGE SLIDER=== */
+#slider-wrapper{
+	width: 448px;
+	height: 170px; /* CHANGES HEIGHT OF SLIDER */
+	margin: 50px auto;
+	margin-top: 20px;
+	position: relative;
+	margin-bottom: 0px;
+	background: rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+
+.inner-wrapper{
+	width: 448px;
+	height: 170px; /* CHANGES HEIGHT OF SLIDER */
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+		
+#s1{
+	padding: 6px;
+	background: #FFFFFF;
+	position: absolute;
+	left: 50%;
+	bottom: 25px;
+	margin-left: -36px;
+	border-radius: 20px;
+	opacity: 0.3;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#s2{
+	padding: 6px;
+	background: #FFFFFF;
+	position: absolute;
+	left: 50%;
+	bottom: 25px;
+	margin-left: -12px;
+	border-radius: 20px;
+	opacity: 0.3;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#s3{
+	padding: 6px;
+	background: #FFFFFF;
+	position: absolute;
+	left: 50%;
+	bottom: 25px;
+	margin-left: 12px;
+	border-radius: 20px;
+	opacity: 0.3;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#s4{
+	padding: 6px;
+	background: #FFFFFF;
+	position: absolute;
+	left: 50%;
+	bottom: 25px;
+	margin-left: 36px;
+	border-radius: 20px;
+	opacity: 0.3;
+	cursor: pointer;
+	z-index: 999;
+}
+				
+#s1:hover, #s2:hover, #s3:hover, #s4:hover{ opacity: 1;}
+
+.control{ display: none;}
+
+#Slide1:checked ~ .overflow-wrapper{ margin-left: 0%; }
+#Slide2:checked ~ .overflow-wrapper{ margin-left: -100%; }
+#Slide3:checked ~ .overflow-wrapper{ margin-left: -200%; }
+#Slide4:checked ~ .overflow-wrapper{ margin-left: -300%; }
+
+#Slide1:checked + #s1 { opacity: 1; }
+#Slide2:checked + #s2 { opacity: 1; }
+#Slide3:checked + #s3 { opacity: 1; }
+#Slide4:checked + #s4 { opacity: 1; }
+				
+.overflow-wrapper{
+	width: 400%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow-y: hidden;
+	z-index: 1;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+			
+.slide img{
+	width: 25%;
+	float: left;
+}
+
+/* ===CUSTOM YOUTUBE EMBED=== */
+.youtube_video {
+	margin-top: 20px;
+}
+
+/* ===GALLERY (FRIENDS)=== */
+.gallery_container {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.galleryItem {
+    color: #797478;
+    float: left;
+    width: 29.3%;
+    margin:  2% 2% 20px 2%; 
+}
+
+.galleryItem a {
+	display: inline-block;
+	height: 60px;
+	overflow: hidden;
+}
+
+.galleryItem a:hover {
+	opacity: 0.5;
+}
+ 
+.galleryItem h3 {
+    text-transform: uppercase;
+    margin: 10px 0 5px 0;
+}
+
+.galleryItem p {
+	margin: 5px 0 !important;
+}
+ 
+.galleryItem img {
+    max-width: 100%;
+}
+
+/* ===MUSIC SECTION=== */
+#music {
+	position: absolute;
+	top: -15px;
+	left: 5px;
+}
+
+/* DO NOT REMOVE CREDIT */
+#credit {
+	color: #000;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 10px;
+}
+</style>
+
+<div id="wrapper">
+	<div class="content">
+
+		<!-- STATS - PROFILE SECTION -->
+		<!-- ======================= -->
+		<div id="stats" class="content_box">
+			<div class="content_section">
+				<!-- SECTION TITLE -->
+				<h1 class="title"><span>Stats</span></h1>
+				<div class="separator"></div>
+
+				<!-- SECTION CONTENT -->
+				<p class="label">Name</p>
+				<p>Levi Ackerman</p>
+
+				<p class="label">Sex</p>
+				<p><span class="strike">Yes, please.</span> Male</p>
+
+				<p class="label">Age</p>
+				<p>34 Years</p>
+
+				<p class="label">Race</p>
+				<p>Human</p>
+
+				<p class="label">Demeanor</p>
+				<p>Calm, Abrasive, Cold - Has been known to issue violent threats.</p>
+
+				<p class="label">Orientation</p>
+				<p>Straight</p>
+
+				<p class="label">Occupation</p>
+				<p>Scout Captain</p>
+
+				<p class="label">Basic Abilities</p>
+				<p>Chopping Up Titans; Cleaning.</p>
+			</div>
+		</div>
+		<!-- END STATS SECTION -->
+
+
+
+		<!-- HISTORY - PROFILE SECTION -->
+		<!-- ========================= -->
+		<div id="history" class="content_box">
+			<div class="content_section">
+				<!-- SECTION TITLE -->
+				<h1 class="title"><span>History</span></h1>
+				<div class="separator"></div>
+
+				<!-- SECTION CONTENT -->
+				<p>Levi is the son of Kuchel Ackerman, a prostitute who worked in the subterranean city. One day, Kenny Ackerman, Kuchel's older brother, comes to the city to see her; only to find that she is dead. There he finds a young and squalid Levi sitting in front of his mother's bed. Kenny decides to take care of him, but he does not consider himself a good father, so he raises Levi as he could: teaching him knife skills, how to get along with people, and violent behaviour. Levi also learned to use his own power. The time passed and Kenny Ackerman ended up teaching Levi everything he knows. One day, in the subterranean city, Levi started a fight which he won easily. On that moment, Kenny decided to leave him behind, as he had made sure that he and Levi were not going to have a pathetic death like Kuchel.</p>
+
+				<p>Some time after Kenny left, Levi lived the life of a thug in the underground city below the Capitol, along with his friend Farlan Church. Later, they were joined by Isabel Magnolia. The three somehow sole and trained themselves to use 3DMG Gear, using it to commit various crimes to make money and save up to get citizenship on the surface. However, during one such job, they were captured by Erwin Smith, Mike Zacharius, and several of their subordinates, after which Erwin blackmailed the "Thug Trio" into joining the Survey Corps. While Farlan and Isabel died on their first expedition, Levi went on to become "Humanity's Strongest Soldier" and head of the Special Operation's Squad.</p>
+			</div>
+		</div>
+		<!-- END HISTORY SECTION -->
+
+
+
+		<!-- FRIENDS - PROFILE SECTION -->
+		<!-- ==================================== -->
+		<div id="friends" class="content_box">
+			<div class="content_section">
+				<!-- SECTION TITLE -->
+				<h1 class="title"><span>Friends</span></h1>
+				<div class="separator"></div>
+
+				<!-- SECTION CONTENT -->
+				<div class="gallery_container">
+				    <div class="galleryItem">
+				        <a href="#"><img src="http://i.ytimg.com/vi/V7o2dH5JN5U/maxresdefault.jpg" alt="Armin Arlert"></a>
+				        <h3>Armin Arlert</h3>
+				        <p>Lorem ipsum dolor sit amet...</p>
+				    </div>
+				 
+				    <div class="galleryItem">
+				        <a href="#"><img src="http://38.media.tumblr.com/388f8cbe988df7e1dda3ae299e5abd42/tumblr_inline_nlxm74K8PN1tnkzic.gif" alt="Eren Jaeger"></a>
+				        <h3>Eren Jaeger</h3>
+				        <p>Lorem ipsum dolor sit amet...</p>
+				    </div>
+
+				    <div class="galleryItem">
+				        <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf9YcTbOVW_OaxRlvttkPisjTfg6azVLm0EaO8V8v_3XVspKbWFw" alt="Mikasa Ackerman"></a>
+				        <h3>Mikasa Ackerman</h3>
+				        <p>Lorem ipsum dolor sit amet...</p>
+				    </div>
+
+				    <div class="galleryItem">
+				        <a href="#"><img src="http://images6.fanpop.com/image/photos/35000000/Ervin-Smith-ervin-smith-35082328-1076-607.jpg" alt="Ervin Smith"></a>
+				        <h3>Ervin Smith</h3>
+				        <p>Lorem ipsum dolor sit amet...</p>
+				    </div>
+				 
+				    <div class="galleryItem">
+				        <a href="#"><img src="http://33.media.tumblr.com/9783598b5fd0bda0d1289a0be6b1bf7f/tumblr_na0r67gthY1rzlvy0o3_r1_500.gif" alt="Jean Kirstein"></a>
+				        <h3>Jean Kirstein</h3>
+				        <p>Lorem ipsum dolor sit amet...</p>
+				    </div>
+
+				    <div class="galleryItem">
+				        <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/736x/78/7e/6b/787e6b3f756b0c3e25ed7b352e3f044d.jpg" alt="Tide"></a>
+				        <h3>Tide Detergent</h3>
+				        <p>Lorem ipsum dolor sit amet...</p>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!-- END FRIENDS SECTION -->
+
+
+		<!-- CUSTOM ELEMENTS - PROFILE SECTION -->
+		<!-- ================================== -->
+		<div id="custom_elements" class="content_box">
+			<div class="content_section">
+				<!-- SECTION TITLE -->
+				<h1 class="title"><span>Custom Profile Elements</span></h1>
+				<div class="separator"></div>
+
+				<!-- SECTION CONTENT -->
+				<!-- IMAGE SLIDER -->
+				<div id="slider-wrapper">
+					<div class="inner-wrapper">
+						<input checked type="radio" name="slide" class="control" id="Slide1"/>
+							<label for="Slide1" id="s1"></label>
+						<input type="radio" name="slide" class="control" id="Slide2"/>
+							<label for="Slide2" id="s2"></label>
+						<input type="radio" name="slide" class="control" id="Slide3"/>
+							<label for="Slide3" id="s3"></label>
+						<input type="radio" name="slide" class="control" id="Slide4"/>
+							<label for="Slide4" id="s4"></label>
+						<div class="overflow-wrapper">
+							<a class="slide" href="#"><img src="http://cdn0.dailydot.com/cache/70/5d/705de396bbdd40af4e963a6a1169f7f9.jpg"/></a>
+							<a class="slide" href="#"><img src="http://cdn0.dailydot.com/cache/70/5d/705de396bbdd40af4e963a6a1169f7f9.jpg"/></a>
+							<a class="slide" href="#"><img src="http://cdn0.dailydot.com/cache/70/5d/705de396bbdd40af4e963a6a1169f7f9.jpg"/></a>
+							<a class="slide" href="#"><img src="http://cdn0.dailydot.com/cache/70/5d/705de396bbdd40af4e963a6a1169f7f9.jpg"/></a>
+						</div>
+					</div>
+				</div>
+				<!-- END IMAGE SLIDER -->
+				
+				<!-- YOUTUBE VIDEO -->
+				<div class="youtube_video">
+					<object width="448" height="252">
+						<param name="movie" value="https://www.youtube.com/v/WWZCl7RqpN4"></param><param name="allowFullScreen" value="true"></param>
+						<param name="allowscriptaccess" value="always"></param>
+						<embed src="https://www.youtube.com/v/WWZCl7RqpN4" type="application/x-shockwave-flash" width="448" height="252" allowscriptaccess="always" allowfullscreen="true"></embed>
+					</object>
+				</div>
+				<!-- END YOUTUBE VIDEO -->
+			</div>
+		</div>
+		<!-- END CUSTOM ELEMENTS SECTION -->
+
+
+		<!-- OOC - PROFILE SECTION -->
+		<!-- ===================== -->
+		<div id="ooc" class="content_box">
+			<div class="content_section">
+				<!-- SECTION TITLE -->
+				<h1 class="title"><span>Out-Of-Character</span></h1>
+				<div class="separator"></div>
+
+				<!-- SECTION CONTENT -->
+				<p>Please do not take out the credit link!</p>
+				<p>&dagger;</p>
+				<p>Please make sure the credit link is visible against your background.</p>
+				<p>&dagger;</p>
+				<p>Please read comments for documentation on how to edit this theme.</p>
+				<p>&dagger;</p>
+				<p>Please read the posts on my <a href="http://kyu-kawaii.deviantart.com">Deviant Art</a> if you would like to add in music. There are three available methods to choose from.</p>
+				<p>&dagger;</p>
+				<p>Did you enjoy this template? Please say "Thanks!" by <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8EBB9BGSDV85G">buying me a coffee</a>! Nipah!</p>
+				<p>&dagger;</p>
+				<p>This profile was created by <a href="http://kyu-kawaii.deviantart.com">Kyu Kawaii</a> on Deviant Art.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- NAVIGATION MENU -->
+	<div class="nav">
+		<span class="nav_link"><a href="#stats">Stats</a></span><br>
+		<span class="nav_link"><a href="#history">History</a></span><br>
+		<span class="nav_link"><a href="#friends">Friends</a></span><br>
+		<span class="nav_link"><a href="#custom_elements">Custom Elements</a></span><br>
+		<span class="nav_link"><a href="#ooc">OOC</a></span><br>
+		<img src="http://i57.tinypic.com/2zs6ww4.png" width="200" height="auto" /><br>
+
+		<!-- MUSIC SECTION -->
+		<div id="music">
+			<!-- Billy Music Player by Sheep Productions -->
+			<!-- Get it here: http://www.sheepproductions.com/billy -->
+			<embed src="http://www.sheepproductions.com/billy/billy.swf?autoplay=true&f0=http://www.sheepproductions.com/mfc/done.mp3&t0=Done&f1=http://www.sheepproductions.com/mfc/justified.mp3&t1=Justified&f2=http://www.sheepproductions.com/mfc/shesaid.mp3&t2=She Said&total=3" quality="high" wmode="transparent" width="200" height="10" name="billy" align="middle" type="application/x-shockwave-flash" />
+		</div>
+	</div>
+
+	<!-- CREDITS -->
+	<!-- By using this template, you have agreed to keep the credit link intact and visible. -->
+	<a href="http://kyu-kawaii.deviantart.com" id="credit">ORIGINAL CREDITS</a>
+</div>
